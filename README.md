@@ -20,8 +20,7 @@ classDiagram
         +atualizarPagina()
     }
 
-    class iPhone implements 
-    ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
+    class iPhone  {
     }
 
     iPhone --> ReprodutorMusical
