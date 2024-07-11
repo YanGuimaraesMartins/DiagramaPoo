@@ -4,34 +4,34 @@
 ```mermaid
 classDiagram
     interface ReprodutorMusical {
-        +tocar() : void
-        +pausar() : void
-        +selecionarMusica(String musica) : String
+        public void tocar();
+        public void pausar();
+        public selecionarMusica(String musica); 
     }
 
     interface AparelhoTelefonico {
-        +ligar(String numero) : void
-        +atender() : void
-        +iniciarCorreioVoz() : void
+        public void ligar(String numero);
+        public void atender(); 
+        public void iniciarCorreioVoz();
     }
 
     interface NavegadorInternet {
-        +exibirPagina(String url): void
-        +adicionarNovaAba(): void
-        +atualizarPagina(): void
+        public void exibirPagina(String url);
+        public void adicionarNovaAba();
+        public void atualizarPagina();
     }
 
     class iPhone implements
 ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
-        +tocar() : void
-        +pausar() : void
-        +selecionarMusica(String musica) : String
-        +ligar(String numero) : void
-        +atender() : void
-        +iniciarCorreioVoz() : void
-        +exibirPagina(String url): void
-        +adicionarNovaAba(): void
-        +atualizarPagina(): void
+        public void tocar();
+        public void pausar();
+        public selecionarMusica(String musica);
+        public void ligar(String numero);
+        public void atender(); 
+        public void iniciarCorreioVoz();
+        public void exibirPagina(String url);
+        public void adicionarNovaAba();
+        public void atualizarPagina();
     }
 
     iPhone --> ReprodutorMusical
