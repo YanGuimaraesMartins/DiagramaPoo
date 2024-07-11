@@ -6,17 +6,17 @@ classDiagram
     interface ReprodutorMusical {
         + tocar()
         + pausar()
-        + selecionarMusica(musica String)
+        + selecionarMusica(String musica)
     }
 
     interface AparelhoTelefonico {
-        + ligar(numero String)
+        + ligar(String numero)
         + atender()
         + iniciarCorreioVoz()
     }
 
     interface NavegadorInternet {
-        + exibirPagina(url String)
+        + exibirPagina(String url)
         + adicionarNovaAba()
         + atualizarPagina()
     }
@@ -24,11 +24,11 @@ classDiagram
     class iPhone {
         + tocar()
         + pausar()
-        + selecionarMusica(musica String)
-        + ligar(numero String)
+        + selecionarMusica(String musica)
+        + ligar(String numero)
         + atender()
         + iniciarCorreioVoz()
-        + exibirPagina(url String)
+        + exibirPagina(String url)
         + adicionarNovaAba()
         + atualizarPagina()
     }
