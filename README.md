@@ -1,6 +1,4 @@
-# DiagramaPoo
 
-### Exemplo de Diagrama UML (Mermaid)
 
 ```mermaid
 classDiagram
